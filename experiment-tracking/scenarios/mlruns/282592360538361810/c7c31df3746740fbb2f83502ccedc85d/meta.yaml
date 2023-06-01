@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/Neko/OneDrive/Desktop/learning/Homework/mlops_zoomcamp/experiment-tracking/scenarios/mlruns/282592360538361810/c7c31df3746740fbb2f83502ccedc85d/artifacts
+end_time: 1685554949262
+entry_point_name: ''
+experiment_id: '282592360538361810'
+lifecycle_stage: active
+run_id: c7c31df3746740fbb2f83502ccedc85d
+run_name: vaunted-sloth-315
+run_uuid: c7c31df3746740fbb2f83502ccedc85d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685554947292
+status: 3
+tags: []
+user_id: Neko
