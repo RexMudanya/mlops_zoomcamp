@@ -5,3 +5,6 @@ pandas
 seaborn
 hyperopt
 xgboost
+matplotlib
+pyarrow
+wandb
