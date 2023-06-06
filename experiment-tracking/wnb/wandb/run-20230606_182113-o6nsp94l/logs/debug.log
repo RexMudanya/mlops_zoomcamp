@@ -1,0 +1,27 @@
+2023-06-06 18:21:13,426 INFO    MainThread:9828 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-06-06 18:21:13,426 INFO    MainThread:9828 [wandb_setup.py:_flush():76] Configure stats pid to 9828
+2023-06-06 18:21:13,426 INFO    MainThread:9828 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Neko\.config\wandb\settings
+2023-06-06 18:21:13,426 INFO    MainThread:9828 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\experiment-tracking\wnb\wandb\settings
+2023-06-06 18:21:13,426 INFO    MainThread:9828 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-06-06 18:21:13,426 INFO    MainThread:9828 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-06 18:21:13,427 INFO    MainThread:9828 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'experiment-tracking\\wnb\\preprocess_data.py', 'program': 'C:\\Users\\Neko\\OneDrive\\Desktop\\learning\\Homework\\mlops_zoomcamp\\experiment-tracking\\wnb\\preprocess_data.py'}
+2023-06-06 18:21:13,427 INFO    MainThread:9828 [wandb_init.py:_log_setup():507] Logging user logs to C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\experiment-tracking\wnb\wandb\run-20230606_182113-o6nsp94l\logs\debug.log
+2023-06-06 18:21:13,427 INFO    MainThread:9828 [wandb_init.py:_log_setup():508] Logging internal logs to C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\experiment-tracking\wnb\wandb\run-20230606_182113-o6nsp94l\logs\debug-internal.log
+2023-06-06 18:21:13,427 INFO    MainThread:9828 [wandb_init.py:init():547] calling init triggers
+2023-06-06 18:21:13,427 INFO    MainThread:9828 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {}
+2023-06-06 18:21:13,427 INFO    MainThread:9828 [wandb_init.py:init():596] starting backend
+2023-06-06 18:21:13,427 INFO    MainThread:9828 [wandb_init.py:init():600] setting up manager
+2023-06-06 18:21:13,432 INFO    MainThread:9828 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-06-06 18:21:13,440 INFO    MainThread:9828 [wandb_init.py:init():606] backend started and connected
+2023-06-06 18:21:13,444 INFO    MainThread:9828 [wandb_init.py:init():700] updated telemetry
+2023-06-06 18:21:13,490 INFO    MainThread:9828 [wandb_init.py:init():737] communicating run to backend with 60.0 second timeout
+2023-06-06 18:21:13,567 ERROR   MainThread:9828 [wandb_init.py:init():763] encountered error: The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)
+2023-06-06 18:21:13,770 ERROR   MainThread:9828 [wandb_init.py:init():1168] The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)
+Traceback (most recent call last):
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 1150, in init
+    run = wi.init()
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\wandb_init.py", line 769, in init
+    raise error
+wandb.errors.AuthenticationError: The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)
+2023-06-06 18:21:14,780 WARNING MsgRouterThr:9828 [router.py:message_loop():77] message_loop has been closed

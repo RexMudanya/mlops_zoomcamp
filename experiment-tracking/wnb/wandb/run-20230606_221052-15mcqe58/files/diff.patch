@@ -1,0 +1,28 @@
+diff --git a/.gitignore b/.gitignore
+index 0a34381..00a5257 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1 +1,2 @@
+-.vs
+\ No newline at end of file
++.vs
++*mlops-zoomcamp-wandb
+\ No newline at end of file
+diff --git a/experiment-tracking/homework/mlflow/mlflow.db b/experiment-tracking/homework/mlflow/mlflow.db
+index b3c5a3c..0e186ee 100644
+Binary files a/experiment-tracking/homework/mlflow/mlflow.db and b/experiment-tracking/homework/mlflow/mlflow.db differ
+diff --git a/requirements.txt b/requirements.txt
+index 4950203..a8db6a8 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -4,4 +4,7 @@ scikit-learn
+ pandas
+ seaborn
+ hyperopt
+-xgboost
+\ No newline at end of file
++xgboost
++matplotlib
++pyarrow
++wandb
+\ No newline at end of file

@@ -1,0 +1,92 @@
+2023-06-06 18:14:53,608 INFO    StreamThr :16540 [internal.py:wandb_internal():86] W&B internal server running at pid: 16540, started at: 2023-06-06 18:14:53.607720
+2023-06-06 18:14:53,610 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: status
+2023-06-06 18:14:53,617 INFO    WriterThread:16540 [datastore.py:open_for_write():85] open: C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\experiment-tracking\wnb\wandb\run-20230606_181453-rdgq4jdo\run-rdgq4jdo.wandb
+2023-06-06 18:14:53,617 DEBUG   SenderThread:16540 [sender.py:send():375] send: header
+2023-06-06 18:14:53,737 DEBUG   SenderThread:16540 [sender.py:send():375] send: run
+2023-06-06 18:14:58,790 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-06 18:15:03,846 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-06 18:15:08,884 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-06 18:15:09,579 INFO    SenderThread:16540 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\urllib3\connectionpool.py", line 714, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\urllib3\connectionpool.py", line 415, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\Neko\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\Neko\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\Neko\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\Neko\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 1010, in _send_output
+    self.send(msg)
+  File "C:\Users\Neko\AppData\Local\Programs\Python\Python39\lib\http\client.py", line 950, in send
+    self.connect()
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000020B9A433910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\urllib3\connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020B9A433910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\internal\internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\lib\gql_request.py", line 55, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\requests\sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020B9A433910>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2023-06-06 18:15:13,937 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-06 18:15:18,980 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-06 18:15:24,017 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-06 18:15:29,052 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-06 18:15:34,104 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-06 18:15:39,144 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-06 18:15:44,193 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-06 18:15:49,242 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: keepalive
+2023-06-06 18:15:54,281 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: cancel
+2023-06-06 18:15:54,282 DEBUG   SenderThread:16540 [sender.py:send():384] Record cancelled: run
+2023-06-06 18:15:54,282 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: cancel
+2023-06-06 18:15:54,282 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: status_report
+2023-06-06 18:15:54,521 DEBUG   HandlerThread:16540 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-06 18:15:54,521 INFO    HandlerThread:16540 [handler.py:finish():842] shutting down handler
+2023-06-06 18:15:55,294 INFO    SenderThread:16540 [sender.py:finish():1550] shutting down sender
+2023-06-06 18:15:55,294 INFO    WriterThread:16540 [datastore.py:close():298] close: C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\experiment-tracking\wnb\wandb\run-20230606_181453-rdgq4jdo\run-rdgq4jdo.wandb

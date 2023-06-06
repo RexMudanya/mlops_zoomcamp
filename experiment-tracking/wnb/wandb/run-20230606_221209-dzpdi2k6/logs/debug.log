@@ -1,0 +1,34 @@
+2023-06-06 22:12:09,709 INFO    Thread-169:15084 [wandb_setup.py:_flush():76] Current SDK version is 0.15.3
+2023-06-06 22:12:09,709 INFO    Thread-169:15084 [wandb_setup.py:_flush():76] Configure stats pid to 15084
+2023-06-06 22:12:09,709 INFO    Thread-169:15084 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Neko\.config\wandb\settings
+2023-06-06 22:12:09,709 INFO    Thread-169:15084 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\experiment-tracking\wnb\wandb\settings
+2023-06-06 22:12:09,709 INFO    Thread-169:15084 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'rex', 'project': 'homework', 'root_dir': 'C:\\Users\\Neko\\OneDrive\\Desktop\\learning\\Homework\\mlops_zoomcamp\\experiment-tracking\\wnb', 'run_id': 'dzpdi2k6', 'sweep_param_path': 'C:\\Users\\Neko\\OneDrive\\Desktop\\learning\\Homework\\mlops_zoomcamp\\experiment-tracking\\wnb\\wandb\\sweep-xtoqkq4g\\config-dzpdi2k6.yaml', 'sweep_id': 'xtoqkq4g'}
+2023-06-06 22:12:09,710 INFO    Thread-169:15084 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-06-06 22:12:09,710 INFO    Thread-169:15084 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'experiment-tracking\\wnb\\sweep.py', 'program': 'C:\\Users\\Neko\\OneDrive\\Desktop\\learning\\Homework\\mlops_zoomcamp\\experiment-tracking\\wnb\\sweep.py'}
+2023-06-06 22:12:09,710 INFO    Thread-169:15084 [wandb_init.py:_log_setup():507] Logging user logs to C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\experiment-tracking\wnb\wandb\run-20230606_221209-dzpdi2k6\logs\debug.log
+2023-06-06 22:12:09,710 INFO    Thread-169:15084 [wandb_init.py:_log_setup():508] Logging internal logs to C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\experiment-tracking\wnb\wandb\run-20230606_221209-dzpdi2k6\logs\debug-internal.log
+2023-06-06 22:12:09,711 INFO    Thread-169:15084 [wandb_init.py:init():547] calling init triggers
+2023-06-06 22:12:09,711 INFO    Thread-169:15084 [wandb_init.py:init():554] wandb.init called with sweep_config: {'max_depth': 18, 'min_samples_leaf': 1, 'min_samples_split': 9, 'n_estimators': 34}
+config: {}
+2023-06-06 22:12:09,711 INFO    Thread-169:15084 [wandb_init.py:init():596] starting backend
+2023-06-06 22:12:09,711 INFO    Thread-169:15084 [wandb_init.py:init():600] setting up manager
+2023-06-06 22:12:09,715 INFO    Thread-169:15084 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-06-06 22:12:09,720 INFO    Thread-169:15084 [wandb_init.py:init():606] backend started and connected
+2023-06-06 22:12:09,725 INFO    Thread-169:15084 [wandb_run.py:_config_callback():1286] config_cb None None {'max_depth': 18, 'min_samples_leaf': 1, 'min_samples_split': 9, 'n_estimators': 34}
+2023-06-06 22:12:09,725 INFO    Thread-169:15084 [wandb_init.py:init():700] updated telemetry
+2023-06-06 22:12:09,768 INFO    Thread-169:15084 [wandb_init.py:init():737] communicating run to backend with 60.0 second timeout
+2023-06-06 22:12:09,851 INFO    Thread-169:15084 [wandb_run.py:_on_init():2177] communicating current version
+2023-06-06 22:12:10,348 INFO    Thread-169:15084 [wandb_run.py:_on_init():2186] got version response 
+2023-06-06 22:12:10,348 INFO    Thread-169:15084 [wandb_init.py:init():787] starting run threads in backend
+2023-06-06 22:12:10,738 INFO    Thread-169:15084 [wandb_run.py:_console_start():2158] atexit reg
+2023-06-06 22:12:10,738 INFO    Thread-169:15084 [wandb_run.py:_redirect():2013] redirect: SettingsConsole.WRAP_RAW
+2023-06-06 22:12:10,738 INFO    Thread-169:15084 [wandb_run.py:_redirect():2078] Wrapping output streams.
+2023-06-06 22:12:10,738 INFO    Thread-169:15084 [wandb_run.py:_redirect():2103] Redirects installed.
+2023-06-06 22:12:10,739 INFO    Thread-169:15084 [wandb_init.py:init():829] run started, returning control to user process
+2023-06-06 22:12:34,545 INFO    Thread-169:15084 [wandb_run.py:_finish():1893] finishing run rex/homework/dzpdi2k6
+2023-06-06 22:12:34,545 INFO    Thread-169:15084 [wandb_run.py:_atexit_cleanup():2127] got exitcode: 0
+2023-06-06 22:12:34,546 INFO    Thread-169:15084 [wandb_run.py:_restore():2110] restore
+2023-06-06 22:12:34,546 INFO    Thread-169:15084 [wandb_run.py:_restore():2116] restore done
+2023-06-06 22:12:38,560 INFO    Thread-169:15084 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-06-06 22:12:38,560 INFO    Thread-169:15084 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-06-06 22:12:38,564 INFO    Thread-169:15084 [wandb_run.py:_footer_sync_info():3428] logging synced files

@@ -1,0 +1,57 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.9.0",
+    "heartbeatAt": "2023-06-06T18:56:42.714539",
+    "startedAt": "2023-06-06T18:56:41.936398",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--wandb_project",
+        "homework",
+        "--wandb_entity",
+        "rex",
+        "--data_artifact",
+        "rex/homework/NYC-Taxi:v0"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\Neko\\OneDrive\\Desktop\\learning\\Homework\\mlops_zoomcamp\\experiment-tracking\\wnb\\train.py",
+    "codePath": "experiment-tracking\\wnb\\train.py",
+    "git": {
+        "remote": "https://github.com/RexMudanya/mlops_zoomcamp.git",
+        "commit": "f1da43e9309fb66f6992a6bf8dd611c7d7b60c30"
+    },
+    "email": "musungumudanya@gmail.com",
+    "root": "C:/Users/Neko/OneDrive/Desktop/learning/Homework/mlops_zoomcamp",
+    "host": "DESKTOP-USODQQI",
+    "username": "Neko",
+    "executable": "C:\\Users\\Neko\\OneDrive\\Desktop\\learning\\Homework\\mlops_zoomcamp\\venv\\Scripts\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2304.0,
+        "min": 0.0,
+        "max": 2304.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2304.0,
+            "min": 0.0,
+            "max": 2304.0
+        }
+    ],
+    "disk": {
+        "total": 476.06347274780273,
+        "used": 231.01075744628906
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.646286010742188
+    }
+}

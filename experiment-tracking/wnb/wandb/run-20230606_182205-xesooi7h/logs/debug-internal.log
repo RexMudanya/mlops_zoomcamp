@@ -1,0 +1,49 @@
+2023-06-06 18:22:05,678 INFO    StreamThr :2324 [internal.py:wandb_internal():86] W&B internal server running at pid: 2324, started at: 2023-06-06 18:22:05.678413
+2023-06-06 18:22:05,679 DEBUG   HandlerThread:2324 [handler.py:handle_request():144] handle_request: status
+2023-06-06 18:22:05,685 INFO    WriterThread:2324 [datastore.py:open_for_write():85] open: C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\experiment-tracking\wnb\wandb\run-20230606_182205-xesooi7h\run-xesooi7h.wandb
+2023-06-06 18:22:05,686 DEBUG   SenderThread:2324 [sender.py:send():375] send: header
+2023-06-06 18:22:05,728 DEBUG   SenderThread:2324 [sender.py:send():375] send: run
+2023-06-06 18:22:05,786 ERROR   SenderThread:2324 [internal_api.py:execute():288] 401 response executing GraphQL.
+2023-06-06 18:22:05,787 ERROR   SenderThread:2324 [internal_api.py:execute():289] {"errors":[{"message":"user is not logged in","path":["upsertBucket"],"extensions":{"code":"PERMISSION_ERROR"}}],"data":{"upsertBucket":null}}
+2023-06-06 18:22:05,793 ERROR   SenderThread:2324 [sender.py:send_run():979] The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)
+Traceback (most recent call last):
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\internal\internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: http://localhost:8080/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\internal\sender.py", line 977, in send_run
+    self._init_run(run, config_value_dict)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\internal\sender.py", line 1015, in _init_run
+    server_run, inserted, server_messages = self._api.upsert_run(
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\apis\normalize.py", line 73, in wrapper
+    raise err
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\apis\normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\internal\internal_api.py", line 1690, in upsert_run
+    response = self.gql(
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\internal\internal_api.py", line 257, in gql
+    ret = self._retry_gql(
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\sdk\lib\retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\util.py", line 907, in check_retry_fn
+    return fallback_retry_fn(e)
+  File "C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\venv\lib\site-packages\wandb\util.py", line 838, in no_retry_auth
+    raise AuthenticationError(
+wandb.errors.AuthenticationError: The API key you provided is either invalid or missing.  If the `WANDB_API_KEY` environment variable is set, make sure it is correct. Otherwise, to resolve this issue, you may try running the 'wandb login --relogin' command. If you are using a local server, make sure that you're using the correct hostname. If you're not sure, you can try logging in again using the 'wandb login --relogin --host [hostname]' command.(Error 401: Unauthorized)
+2023-06-06 18:22:06,004 DEBUG   HandlerThread:2324 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-06 18:22:06,004 INFO    HandlerThread:2324 [handler.py:finish():842] shutting down handler
+2023-06-06 18:22:06,741 INFO    WriterThread:2324 [datastore.py:close():298] close: C:\Users\Neko\OneDrive\Desktop\learning\Homework\mlops_zoomcamp\experiment-tracking\wnb\wandb\run-20230606_182205-xesooi7h\run-xesooi7h.wandb
+2023-06-06 18:22:06,804 INFO    SenderThread:2324 [sender.py:finish():1550] shutting down sender

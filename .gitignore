@@ -1,2 +1,4 @@
 .vs
 *mlops-zoomcamp-wandb
+*data/
+*artifacts/
