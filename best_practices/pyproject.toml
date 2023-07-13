@@ -1,0 +1,8 @@
+[tool.pylint.message_control]
+disable = [
+    "missing-function-docstring",
+    "missing-final-newline",
+    "missing-class-doctring",
+    "missing-module-docstring",
+    "too-few-public-methods"
+] 

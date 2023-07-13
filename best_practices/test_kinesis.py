@@ -1,5 +1,4 @@
 # pylint: disable=duplicate-code
-
 import os
 import json
 from pprint import pprint
