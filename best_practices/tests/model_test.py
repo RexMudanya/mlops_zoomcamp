@@ -51,7 +51,7 @@ def test_predict():
 
 def test_lambda_handler():
     model_mock = ModelMock(10)
-    model_version = 'test123 '
+    model_version = 'test123'
     model_service = model.ModelService(model_mock, model_version)
     event = {
         "Records": [
@@ -72,3 +72,4 @@ def test_lambda_handler():
                     'ride_id': 256
                 }
             }]
+    assert actual_predictions == expected_predictions   
