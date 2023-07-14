@@ -5,7 +5,7 @@ disable = [
     "missing-class-doctring",
     "missing-module-docstring",
     "too-few-public-methods"
-] 
+]
 
 [tool.black]
 line-length = 88

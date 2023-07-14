@@ -1,3 +1,4 @@
 .vs
 *mlops-zoomcamp-wandb
 *artifacts/
+__pycache__

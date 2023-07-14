@@ -78,6 +78,7 @@ class KinesisCallback:
     def __init__(self, kinesis_client, PREDICTIONS_STREAM_NAME) -> None:
         self.kinesis_client = kinesis_client
         self.PREDICTIONS_STREAM_NAME = PREDICTIONS_STREAM_NAME
+        self.PREDICTIONS_STREAM_NAME = PREDICTIONS_STREAM_NAME
 
     def put_record(self, prediction_event):
         ride_id = prediction_event["prediction"]["ride_id"]
